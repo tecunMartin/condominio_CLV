@@ -1,0 +1,56 @@
+/* Habitaciones  */
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#home{
+    width: 100%;
+}
+
+.carousel{
+    position: relative;
+}
+.carousel-inner{
+    filter: contrast(20%);
+}
+
+.overlay{
+    position: absolute;
+    top: 30%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.overlay h1{
+    font-size: 45px;
+    text-align: right;
+}
+
+#habitaciones h1{
+    text-align: center;
+    padding: 5%;
+}
+
+/* Cartas de habitaciones */
+.itemsH{
+    margin: 0px;
+    padding: 0px;
+}
+.item{
+    margin-bottom: 0;
+}
+
+.masItems{
+    color:#5DADE2;
+}
+
+.masItems:hover{
+    text-decoration: none;
+}
+
+
+
+

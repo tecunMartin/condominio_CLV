@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+/* Variables */
+:root{
+    --color-nav:black !important;
+    --color-home:black !important;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* Navbar normal */
+#navbarr{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.inner-navbar{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    font-size: 25px;
+}
+
+.Part1::first-letter{
+    font-family: "Pangolin",sans-serif;
+    color: var(--color-nav);
+    font-size: 50px;
+    margin: 0px;
+}
+
+.restoLogo{
+    color: var(--color-nav);
+    font-size: 20px;
+}
+
+/* navbarScript con interacion */
+.navbarScript{
+    background-color: black;
+    z-index: 999;
+}
+.navbarScript .logo .restoLogo,
+.navbarScript .logo .Part1::first-letter{
+    color: white !important;
+}
+
+
+/* Area del home */
+#Home{
+    background: url("http://paloblanco.com/wp-content/uploads/2020/01/catalina-linda-vista.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+}
+
+#Home .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--color-home);
+}
+
+#Home .container h1{
+    font-size: 70px;
+    padding: 0%;
+}
+
+#Home .container h1::after{
+    content: "Los mejores precios";
+    animation: texto 15s both infinite;
+}
+/* Animaciones para la seccion de el home */
+@keyframes texto{     
+    10%{
+        opacity: 0;
+    }30%{
+        content: "Las mejores casas";
+    }40%{
+        opacity: 1;
+    }50%{
+        opacity: 0;
+    }
+}
+
+/* Seccion de las cartas */
+.menciones{
+    background-color: white;
+}
+
+.container h1{
+    padding-bottom: 5%;
+    padding-top: 10%;
+    text-align: center;
+    font-family: "Lato",sans-serif ;
+}
+
+.col-lg-3{
+    height: 100%;
+    font-family: "Lato";
+}
+
+.menciones .imagen_Contribuyente{
+    text-align: center;
+    width: 100%;
+}
+
+/* Seccion de beneficios */
+.beneficios{
+    background-color: black;
+}
+
+.imagen_caru img{
+    object-fit: cover;
+}
+
+#imagen_bene{
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Parte del footer */
+#footer{
+    font-family: "Lato",sans-serif;
+    color: white;
+    padding-top: 5%;
+    /* padding-bottom: 3%; */
+    font-size: 15px;
+    margin: 0px;
+    background-color: #313131;
+}
+
+#footer h4{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+#footer .text a{
+    text-decoration: none;
+    color: white;
+}
+
+.text a{
+    padding-bottom: 10%;
+    display: block;
+    height: 100%;
+}
+.barcelo{
+    height: 192px !important;
+}
+
+.text-carousel{
+    color: black; 
+    text-align: center;
+    margin:0;
+}
+.text-carousel p{
+    font-size: 20px;
+}
+
+.text-carousel_otros{
+    margin: 0px;
+    text-align: center;
+}
+
+.icons-social{
+    color: white;
+    font-size: 50px;
+}
